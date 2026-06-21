@@ -1,0 +1,86 @@
+{
+  "argentina": {
+    "country": "Argentina",
+    "flag": "🇦🇷",
+    "resources": [
+      {"name": "Centro de Asistencia al Suicida (CAS)", "contact": "135", "type": "Crisis / Suicide Prevention Hotline", "notes": "Free, 24/7, nationwide"},
+      {"name": "UNICEF Argentina – Bullying", "contact": "https://www.unicef.org/argentina", "type": "Educational Resources", "notes": "Guides for students, parents, and schools"},
+      {"name": "Ministerio de Educación – Programa Nacional de Convivencia Escolar", "contact": "https://www.argentina.gob.ar/educacion", "type": "Government School Safety Program", "notes": "Official national anti-bullying framework"},
+      {"name": "Línea de Salud Mental", "contact": "0800-999-0091", "type": "Mental Health Support", "notes": "Free, Buenos Aires province"}
+    ]
+  },
+  "united states": {
+    "country": "United States",
+    "flag": "🇺🇸",
+    "resources": [
+      {"name": "StopBullying.gov", "contact": "https://www.stopbullying.gov", "type": "Official Government Resource", "notes": "Comprehensive guides for students, parents, and educators"},
+      {"name": "Crisis Text Line", "contact": "Text HOME to 741741", "type": "Crisis Support (Text)", "notes": "Free, 24/7 text-based crisis counseling"},
+      {"name": "988 Suicide & Crisis Lifeline", "contact": "988", "type": "Crisis / Suicide Prevention Hotline", "notes": "Call or text 988, free, 24/7"},
+      {"name": "PACER's National Bullying Prevention Center", "contact": "https://www.pacer.org/bullying", "type": "Prevention & Education", "notes": "Resources for kids with disabilities and all students"}
+    ]
+  },
+  "united kingdom": {
+    "country": "United Kingdom",
+    "flag": "🇬🇧",
+    "resources": [
+      {"name": "Childline", "contact": "0800 1111", "type": "Child Support Hotline", "notes": "Free, confidential, for under 19s, 24/7"},
+      {"name": "Anti-Bullying Alliance", "contact": "https://anti-bullyingalliance.org.uk", "type": "Educational Resources & Policy", "notes": "UK's leading anti-bullying organization"},
+      {"name": "Kidscape", "contact": "https://www.kidscape.org.uk", "type": "Bullying Prevention", "notes": "Support for children and parents affected by bullying"},
+      {"name": "Young Minds", "contact": "Text YM to 85258", "type": "Youth Mental Health", "notes": "Crisis support for young people"}
+    ]
+  },
+  "canada": {
+    "country": "Canada",
+    "flag": "🇨🇦",
+    "resources": [
+      {"name": "Kids Help Phone", "contact": "1-800-668-6868", "type": "Youth Crisis Helpline", "notes": "Free, 24/7, bilingual (English/French)"},
+      {"name": "BullyingCanada", "contact": "https://www.bullyingcanada.ca", "type": "Anti-Bullying Support", "notes": "Chat and text support for youth"},
+      {"name": "PREVNet", "contact": "https://www.prevnet.ca", "type": "Research & Education", "notes": "Canada's national bullying prevention authority"}
+    ]
+  },
+  "australia": {
+    "country": "Australia",
+    "flag": "🇦🇺",
+    "resources": [
+      {"name": "Kids Helpline", "contact": "1800 55 1800", "type": "Youth Crisis Helpline", "notes": "Free, 24/7, for ages 5–25"},
+      {"name": "Bullying No Way", "contact": "https://bullyingnoway.gov.au", "type": "Government Anti-Bullying Resource", "notes": "Official national resource for schools, students, and parents"},
+      {"name": "eSafety Commissioner", "contact": "https://www.esafety.gov.au", "type": "Cyberbullying Support", "notes": "Report and get help for online bullying"}
+    ]
+  },
+  "mexico": {
+    "country": "México",
+    "flag": "🇲🇽",
+    "resources": [
+      {"name": "SAPTEL", "contact": "55 5259-8121", "type": "Crisis Helpline", "notes": "Free, 24/7, psychological support"},
+      {"name": "SEP – Programa Nacional de Convivencia Escolar", "contact": "https://www.gob.mx/sep", "type": "Government School Program", "notes": "National anti-bullying program for schools"},
+      {"name": "UNICEF México – Contra el Acoso Escolar", "contact": "https://www.unicef.org/mexico", "type": "Educational Resources", "notes": "Guides and materials for all audiences"}
+    ]
+  },
+  "spain": {
+    "country": "España",
+    "flag": "🇪🇸",
+    "resources": [
+      {"name": "Teléfono de la Esperanza", "contact": "717 003 717", "type": "Crisis Helpline", "notes": "24/7 emotional support"},
+      {"name": "ANAR – Fundación de Ayuda a Niños y Adolescentes en Riesgo", "contact": "900 20 20 10", "type": "Child & Teen Support Hotline", "notes": "Free, confidential, for minors and families"},
+      {"name": "Pantallas Amigas", "contact": "https://www.pantallasamigas.net", "type": "Cyberbullying Prevention", "notes": "Resources for digital safety and online bullying"}
+    ]
+  },
+  "brazil": {
+    "country": "Brasil",
+    "flag": "🇧🇷",
+    "resources": [
+      {"name": "CVV – Centro de Valorização da Vida", "contact": "188", "type": "Crisis / Suicide Prevention Hotline", "notes": "Free, 24/7, nationwide"},
+      {"name": "Disque 100 – Direitos Humanos", "contact": "100", "type": "Human Rights & Child Protection", "notes": "Report child abuse and bullying incidents"},
+      {"name": "Programa Escola sem Bullying", "contact": "https://www.mec.gov.br", "type": "Government School Program", "notes": "Ministry of Education anti-bullying initiative"}
+    ]
+  },
+  "default": {
+    "country": "your country",
+    "flag": "🌍",
+    "resources": [
+      {"name": "UNICEF – Violence Against Children", "contact": "https://www.unicef.org/protection/violence-against-children", "type": "International Resource", "notes": "Global resources and country-level support links"},
+      {"name": "International Association for Suicide Prevention", "contact": "https://www.iasp.info/resources/Crisis_Centres", "type": "Crisis Center Directory", "notes": "Find crisis centers by country"},
+      {"name": "UNESCO – School Violence and Bullying", "contact": "https://www.unesco.org/en/school-violence-and-bullying", "type": "International Education Resource", "notes": "Research, policy guides, and prevention resources"}
+    ]
+  }
+}
