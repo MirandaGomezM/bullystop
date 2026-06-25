@@ -21,55 +21,7 @@ The system auto-detects role, severity, and country from natural language — no
 ---
 
 ## Architecture
-
-```
-User message (natural language)
-       │
-       ▼
-┌──────────────────────────────────────────────────────┐
-│                   app.py  (Gradio UI)                │
-│                                                      │
-│  ┌─────────────────────────────────────────────┐    │
-│  │  classify_message()                         │    │
-│  │  Gemini · temperature=0 · JSON mode         │    │
-│  │  → role (student|parent|teacher)            │    │
-│  │  → severity (low|medium|high)               │    │
-│  │  → country                                  │    │
-│  └────────────────────┬────────────────────────┘    │
-│                       │                             │
-│  ┌────────────────────▼────────────────────────┐    │
-│  │  _CRISIS_PATTERN  (deterministic backstop)  │    │
-│  │  Bilingual EN+ES keyword regex              │    │
-│  │  Fires regardless of classifier output      │    │
-│  │  Cannot be bypassed by prompt injection     │    │
-│  └────────────────────┬────────────────────────┘    │
-│                       │                             │
-│  ┌────────────────────▼────────────────────────┐    │
-│  │          orchestrator_agent  (ADK)          │    │
-│  │   ├── hearme_agent      ← student           │    │
-│  │   ├── parentguide_agent ← parent            │    │
-│  │   └── protocol_agent    ← teacher           │    │
-│  │                                             │    │
-│  │   Each sub-agent has access to:             │    │
-│  │   get_support_resources (FunctionTool)      │    │
-│  │   ── or ── MCP stdio (mcp_server.py)        │    │
-│  └────────────────────┬────────────────────────┘    │
-│                       │                             │
-│  ┌────────────────────▼────────────────────────┐    │
-│  │       policy_server.py  (Hybrid Gate)       │    │
-│  │  Layer 1 · Structural · regex · no LLM call │    │
-│  │  Layer 2 · Semantic   · Gemini · temp=0     │    │
-│  └────────────────────┬────────────────────────┘    │
-│                       │                             │
-│         tracing.py → traces.jsonl                   │
-│     agent.session · agent.think · agent.tool        │
-└──────────────────────────────────────────────────────┘
-       │
-       ▼
-  Final response to user
-```
-
----
+<img width="2720" height="3280" alt="app_architecture_diagram_en" src="https://github.com/user-attachments/assets/69991106-da0a-4612-9730-f3bc3a7e08fc" />
 
 ## Course Concepts Demonstrated
 
